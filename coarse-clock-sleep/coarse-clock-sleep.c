@@ -14,6 +14,7 @@ int main() {
         printf("EINTR: %d\n", ret == EINTR);
         printf("EINVAL: %d\n", ret == EINVAL);
         printf("ENOTSUP: %d\n", ret == ENOTSUP);
+        printf("The cow says %s\n", strerror(ret));
     }
     return 0;
 }
