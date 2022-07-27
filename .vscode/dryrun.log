@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/spire/workspace/scratch-pad'
+make: Leaving directory '/home/spire/workspace/scratch-pad'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
