@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul  7 05:35:17 2022
+# Make data base, printed on Mon Aug  8 23:37:48 2022
 
 # Variables
 
@@ -24,8 +24,6 @@ XDG_SESSION_CLASS = user
 VSCODE_AGENT_FOLDER = /home/spire/.vscode-server
 # environment
 XDG_SESSION_TYPE = tty
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -41,7 +39,7 @@ DOCKER_BUILDKIT = 1
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/spire/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+_ = /home/spire/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/node
 # makefile
 MAKEFILE_LIST := 
 # 'override' directive
@@ -51,31 +49,25 @@ XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/spire
 # environment
-SSH_CONNECTION = 192.168.56.1 53423 192.168.56.103 22
+SSH_CONNECTION = 192.168.56.1 60700 192.168.56.102 22
 # environment
-PATH = /home/spire/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/spire/.local/bin:/home/spire/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/spire/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:/home/spire/.local/bin:/home/spire/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-HASTE_SERVER = https://paste.spire.com
+ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_LOG_STACK = false
-# environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-2535491e-75b7-4da9-953d-52dc4001266f.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-06e13e5c-8903-478f-91ad-e52d2e465d0e.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
 LS_COLORS = 
 # automatic
 %F = $(notdir $%)
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /home/spire/workspace/scratch-pad
 # default
@@ -107,7 +99,7 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 1
 # environment
-XDG_SESSION_ID = 76
+XDG_SESSION_ID = 3
 # environment
 USER = spire
 # makefile
@@ -127,13 +119,13 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 192.168.56.1 53423 22
+SSH_CLIENT = 192.168.56.1 60700 22
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile
 SHELL = /bin/sh
 # environment
-BROWSER = /home/spire/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh
+BROWSER = /home/spire/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/helpers/browser.sh
 # environment
 VSCODE_HANDLES_SIGPIPE = true
 # default
@@ -155,11 +147,9 @@ MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 LANG = C
 # environment
-VSCODE_EXTHOST_WILL_SEND_SOCKET = true
-# environment
 MOTD_SHOWN = pam
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=11/95=12%
+# Load=68/1024=7%, Rehash=0, Collisions=11/90=12%
 
 # Pattern-specific Variable Values
 
@@ -167,9 +157,9 @@ MOTD_SHOWN = pam
 
 # Directories
 
-# . (device 64768, inode 3458257): 13 files, no impossibilities.
+# . (device 64768, inode 2893917): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -219,12 +209,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 266 B / avg = 12 B
-# current buf: size = 8162 B / used = 266 B / count = 21 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 280 B / avg = 12 B
+# current buf: size = 8162 B / used = 280 B / count = 22 / avg = 12 B
 
-# strcache performance: lookups = 24 / hit rate = 12%
+# strcache performance: lookups = 25 / hit rate = 12%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/24=4%
-# Finished Make data base on Thu Jul  7 05:35:17 2022
+# Load=22/8192=0%, Rehash=0, Collisions=1/25=4%
+# Finished Make data base on Mon Aug  8 23:37:48 2022
 
  
