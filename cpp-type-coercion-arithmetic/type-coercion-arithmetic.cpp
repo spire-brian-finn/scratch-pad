@@ -10,4 +10,8 @@ int main() {
     std::cout << unsignedInt + static_cast<uint64_t>(signedInt) << std::endl;
     std::cout << unsignedInt - signedIntPositive << std::endl;
     std::cout << unsignedInt + signedIntPositive << std::endl;
+    double doubleVal = 2.5;
+    int divisor = 2;
+    auto quotient = doubleVal / divisor;
+    std::cout << quotient << std::endl;
 }
