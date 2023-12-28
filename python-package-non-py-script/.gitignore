@@ -1,4 +1,4 @@
 dist
 install_test
 venv
-
+src/the_pacakge.egg_info
