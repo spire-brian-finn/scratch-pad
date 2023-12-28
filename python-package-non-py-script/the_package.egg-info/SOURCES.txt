@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/test_script.sh
+bin/use_the_package
+the_package.egg-info/PKG-INFO
+the_package.egg-info/SOURCES.txt
+the_package.egg-info/dependency_links.txt
+the_package.egg-info/not-zip-safe
+the_package.egg-info/top_level.txt

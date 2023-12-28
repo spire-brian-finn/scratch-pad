@@ -1,5 +1,9 @@
+#!/usr/bin/env python3
+#import the_package
+
 def main():
     print("use_the_package main")
+    #the_package.foo.foo()
 
 if __name__ == "__main__":
     print("__main__")

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: the_package
+Version: 0.0.0
+Summary: A test for packaging non-python scripts with setuptools
+Author: Brian Finn
+Author-email: brian.finn@spire.com
+License-File: LICENSE
