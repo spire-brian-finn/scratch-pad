@@ -1,8 +1,13 @@
 def ccsds_tc_randomizer_bits(n_bits: int):
     """
-    Generate n_bits of the CCSDS TC randomizer (BTG) sequence
-    defined by h(x) = x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,
-    with 8-bit LFSR initialized to all ones.
+    Generate n_bits of the CCSDS TC randomizer sequence
+    following section 6.2 of https://ccsds.org/Pubs/231x0b4e1.pdf
+    The spec claims the polynomial is
+    h(x) = x^8 + x^6 + x^4 + x^3 + x^2 + x + 1,
+    but the diagram just below it seems to suggest
+    x^7 + x^5 + x^4 + x^3 + x^2 + x
+    and that one matches the 40 bits of the sequence given in the spec,
+    1111 1111 0011 1001 1001 1110 0101 1010 0110 1000
     """
     state = 0xFF  # X8..X1 = 1
     bits = []
