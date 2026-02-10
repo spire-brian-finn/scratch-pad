@@ -34,13 +34,11 @@ seq, state = ccsds_tc_randomizer_bits(256)
 
 byte_value = 0
 reversed_byte_value = 0
+print("Right order:\t\tReversed:")
 for i, bit in enumerate(seq):
     if i > 0 and i % 8 == 0:
-        print(f"Right order: {byte_value:0=#4x}\t{byte_value:0=8b}\tReversed: {reversed_byte_value:0=#4x}\t{reversed_byte_value:0=8b}")
+        print(f"{byte_value:0=#4x}\t{byte_value:0=8b}\t{reversed_byte_value:0=#4x}\t{reversed_byte_value:0=8b}")
         byte_value = 0
         reversed_byte_value = 0
     byte_value |= (bit << (7 - (i % 8)))
     reversed_byte_value |= (bit << (i % 8))
-
-
-# yee buddy now try to prove it's inverted in the code?
