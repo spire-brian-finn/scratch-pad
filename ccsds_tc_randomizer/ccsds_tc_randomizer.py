@@ -9,16 +9,13 @@ def ccsds_tc_randomizer_bits(n_bits: int):
     and that one matches the 40 bits of the sequence given in the spec,
     1111 1111 0011 1001 1001 1110 0101 1010 0110 1000
     """
-    state = 0xFF  # X8..X1 = 1
+    state = 0xFF  # Initialize to all 1
     bits = []
 
     for _ in range(n_bits):
-        # Output bit (take X1 = LSB)
         out_bit = state & 0x01
         bits.append(out_bit)
 
-        # Feedback = XOR of taps X8, X6, X4, X3, X2, X1
-        # which are bits 7,5,3,2,1,0 of 'state'
         fb = (
             ((state >> 6) & 1) ^
             ((state >> 4) & 1) ^
@@ -28,9 +25,8 @@ def ccsds_tc_randomizer_bits(n_bits: int):
             ((state >> 0) & 1)
         )
 
-        # Shift right, insert feedback into MSB (X8)
+        # Shift right, insert feedback into MSB
         state = ((state >> 1) & 0x7F) | (fb << 7)
-        #state = ((state << 1) & 0xFE) | fb
 
     return bits, state
 
@@ -45,5 +41,5 @@ for i, bit in enumerate(seq):
         print(f"{byte_value:0=#4x}\t{byte_value:0=8b}\t{reversed_byte_value:0=#4x}\t{reversed_byte_value:0=8b}")
         byte_value = 0
         reversed_byte_value = 0
-    byte_value |= (bit << (7 - (i % 8)))
-    reversed_byte_value |= (bit << (i % 8))
+    byte_value |= (bit << (7 - (i % 8)))  # Shift bits into byte MSB-first, per spec
+    reversed_byte_value |= (bit << (i % 8))  # Shift bits into byte LSB-first
