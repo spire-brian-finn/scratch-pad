@@ -31,14 +31,16 @@ def ccsds_tc_randomizer_bits(n_bits: int):
 
 # Generate and print a 100-bit sequence
 seq, state = ccsds_tc_randomizer_bits(256)
-seq_str = ''.join(str(b) for b in seq)
-print(state, len(seq_str), seq_str)
 
 byte_value = 0
+reversed_byte_value = 0
 for i, bit in enumerate(seq):
     if i > 0 and i % 8 == 0:
-        print(f"{byte_value:0=#4x}\t{byte_value:0=8b}")
+        print(f"Right order: {byte_value:0=#4x}\t{byte_value:0=8b}\tReversed: {reversed_byte_value:0=#4x}\t{reversed_byte_value:0=8b}")
         byte_value = 0
+        reversed_byte_value = 0
     byte_value |= (bit << (7 - (i % 8)))
+    reversed_byte_value |= (bit << (i % 8))
+
 
 # yee buddy now try to prove it's inverted in the code?
