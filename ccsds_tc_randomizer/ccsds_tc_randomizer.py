@@ -36,7 +36,7 @@ print(state, len(seq_str), seq_str)
 
 byte_value = 0
 for i, bit in enumerate(seq):
-    if i % 8 == 0:
+    if i > 0 and i % 8 == 0:
         print(f"{byte_value:0=#4x}\t{byte_value:0=8b}")
         byte_value = 0
     byte_value |= (bit << (7 - (i % 8)))
