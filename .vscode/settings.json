@@ -55,6 +55,8 @@
         "iterator": "cpp",
         "memory_resource": "cpp",
         "random": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "locale": "cpp",
+        "filesystem": "cpp"
     }
 }
